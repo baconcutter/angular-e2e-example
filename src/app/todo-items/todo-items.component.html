@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of items">
+    <input type="checkbox" [checked]="item.done" (click)="toggleDone(item.id)">
+    <span>
+        {{item.text}}
+      </span>
+    <button (click)="removeItem(item.id)">X</button>
+  </li>
+</ul>

@@ -1,0 +1,49 @@
+body {
+  height: 5000px;
+  background: linear-gradient(#fff, #555);
+}
+
+.add-todo {
+  background: blue;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+.add-todo:hover {
+  background: white;
+  color: blue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  margin: 4px 0;
+}
+
+.page-link {
+  display: block;
+  position: sticky;
+  top: 20px;
+  margin-top: 20px;
+}
+.page-link,
+.page-link:visited {
+  color: blue;
+}
+.page-link::after {
+  content: " =>";
+}
